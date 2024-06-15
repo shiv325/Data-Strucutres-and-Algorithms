@@ -9,3 +9,9 @@
 - Determines amount of time and space resources needed to execute program
 - Used to compare different algorithms on different input sizes
 - Determines difficulty of problem
+
+# How to Measure Complexity?
+
+1. Time Complexity
+2. Space Complexity
+3. Auxiliary Space
