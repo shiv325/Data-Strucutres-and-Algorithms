@@ -30,15 +30,31 @@ Data Structures are essential components which
 
 # Types of Data Structures
 
-1. `Linear Data Structures` :
-    - Stores data sequentially
-    - Allows easy insertion and deletion
-    - Examples : Arrays, Linked Lists, Stacks, Queues, etc.
+### A. `On Basis of Built-In Support` :
 
-2. `Non-Linear Data Structures` :
-    - Stores data in hierarchical or interconnected manner
-    - Allows more complex relationships between data elements
-    - Examples : Trees, Graphs, Hash Tables, etc.
+  1. `Primitive Data Structure` :
+      - Basic data structures
+      - Provided in programming language
+      - Represents single values
+      - Examples => Integers, Floating-Point Numbers, Characters, Booleans, etc.
+
+  2. `Abstract Data Structures` :
+      - Higer-Level data structures
+      - Built using primitive data types
+      - Provides more complex and specialized operations
+      - Examples => Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables, etc.
+
+### B. `On Basis of Arrangement of Data and their Inter-Relationships` :
+    
+  1. `Linear Data Structures` :
+      - Stores data sequentially
+      - Allows easy insertion and deletion
+      - Examples : Arrays, Linked Lists, Stacks, Queues, etc.
+    
+  2. `Non-Linear Data Structures` :
+      - Stores data in hierarchical or interconnected manner
+      - Allows more complex relationships between data elements
+      - Examples => Trees, Graphs, Hash Tables, etc.
 
 # Applications of Data Structures
 
