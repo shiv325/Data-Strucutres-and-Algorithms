@@ -31,6 +31,8 @@ We can say that
 - Factorial Time => O(n!)
 - Polynomial Time => O(n<sup>k</sup>)
 
+> ___Note*___ : These time complexities are ordered from lowest to highest as we move from top to bottom
+
 # Examples
 
 - `Constant Time` :
@@ -59,7 +61,7 @@ We can say that
 
     - T(n) = O(log<sub>2</sub> n)
     - Execution time logarithmically increases with input size
-    - Examples => Binary Search
+    - Examples => Binary Search, etc.
       
 
 - `Linear Time` :
@@ -75,7 +77,7 @@ We can say that
                = O(n)
     
     - Execution Time increases linearly with input size
-    - Examples => Traversing arrays
+    - Examples => Traversing arrays, Finding Maximum or Minimum in Arrays, etc.
 
 - `Logarithmic Linear Time` :
 
@@ -137,8 +139,103 @@ We can say that
                        = O(n*log<sub>2</sub> n)
 
     - Execution Time increases log-linearly with input size
-    - Examples => Merge Sort
+    - Examples => Merge Sort, etc.
 
 - `Quadratic Time` :
 
-      d
+      for i in range(n) :
+          for j in range(n) :
+              print(i, j)
+
+    - T(n) = O(n<sup>2</sup>)
+    - For each outer loop iteration, the inner loop iterates 'n' times
+    - Calculation of Time Complexity :-
+     
+            Total time = t(Outer Loop Iteration) * t(Inner Loop Iteration)
+                       = O(n) * O(n)
+                       = O(n<sup>2</sup>)
+
+    - Execution Time is roughly proportional to square of input size
+    - Examples => Bubble Sort, Selection Sort, Nested Loops, Insertion Sort, etc.
+
+- `Bilinear Time` :
+
+      for i in range(n) :
+          for j in range(m) :
+              print(i * j)
+
+    - T(n) = O(n*m)
+    - For each outer loop iteration, the inner loop iterates 'm' times
+    - Calculation of Time Complexity :-
+     
+            Total time = t(Outer Loop Iteration) * t(Inner Loop Iteration)
+                       = O(n) * O(m)
+                       = O(n*m)
+ 
+    - Execution time depends on both the input sizes 'n' and 'm' linearly
+    - Overall, the time complexity evaluates to O(n<sup>2</sup>)
+    - Examples => Operation on Matrices, etc.
+
+- `Cubic Time` :
+
+      for i in range(n) :
+          for j in range(n) :
+              for k in range(n) :
+                  print(x, y, z)
+
+    - T(n) = O(n<sup>3</sup>)
+    - For each outermost loop iteration, the middle inner loop iterates 'n' times
+    - For each first middle inner loop, the inner most loop iterates 'n' times
+    - Calculation of Time Complexity :-
+     
+            Total time = t(Outer Most Loop Iteration) * t(Middle Inner Loop Iteration) * t(Inner Most Loop Iteration)
+                       = O(n) * O(n) * O(n)
+                       = O(n<sup>3</sup>)
+ 
+    - Execution time is directly proportional to cube of input size
+    - Examples => Naive Matrix Multiplication, Processing all possible triplets in a set, etc.
+
+- `Exponential Time` :
+
+      def fibonacci(n) :
+          if n <= 1 :
+              return n
+          return fibonacci(n - 1) + fibonacci(n - 2)
+
+    - T(n) = O(2<sup>n</sup>)
+    - For each call to fibonacci(n), 2 more calls are made i.e. fibonacci(n - 1) and fibonacci(n - 2)
+    - Therefore, each function call results into calling of 2 more function calls
+    - This results in exponential increase in function calls i.e. 2<sup>n</sup>
+    - Execution Time increases exponentially with input size
+    - Examples => Finding Power Set(Set of Subsets), Fibonacci Series, Towers of Hanoi, etc.
+
+- `Factorial Time` :
+
+      def generate_permutations(s):
+          if len(s) == 1:
+              return [s]
+        
+          perms = []
+          for i, char in enumerate(s):
+              remaining = s[:i] + s[i+1:]
+              for perm in generate_permutations(remaining):
+                  perms.append(char + perm)
+          return perms
+
+    - T(n) = O(n!)
+    - For 'n' elements, there are 'n' choices for 1st element, (n - 1) choices for 2nd element, (n - 2) choices for 3rd element, and so on
+    - Total number of permutations = n × (n - 1) × (n - 2) × ... × 3 × 2 × 1 = n!
+    - Execution Time increases rapidly with input size
+    - Examples => Solving n-queens problem, Finding all possible permutations, etc.
+
+- `Polynomial Time` :
+
+    - T(n) = O(n<sup>k</sup>)
+    - Here, 'k' can be any constant number
+    - Even for small inputs, the time time complexity can be extremely high
+    - Execution Time is proportional to n<sup>k</sup>
+    - Examples of Complexites => O(n), O(n<sup>2</sup>), O(n<sup>3</sup>), O(n<sup>4</sup>), O(n<sup>5</sup>), and so on
+
+# Graphs of Time Complexities
+
+[]()
