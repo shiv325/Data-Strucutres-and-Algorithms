@@ -238,4 +238,4 @@ We can say that
 
 # Graphs of Time Complexities
 
-[]()
+![Time Complexities](https://github.com/shiv325/Data-Strucutres-and-Algorithms/blob/5e2fc0f47b38f2144a19b85405a516f683093199/Resources/time-complexity.jpg)
