@@ -239,3 +239,49 @@ We can say that
 # Graphs of Time Complexities
 
 ![Time Complexities](https://github.com/shiv325/Data-Strucutres-and-Algorithms/blob/5e2fc0f47b38f2144a19b85405a516f683093199/Resources/time-complexity.jpg)
+
+# Time Complexity of Popular Algorithms
+
+|       <h2>Algorithm</h3>         | <h2>Best Time Complexity</h2> | <h2>Average Time Complexity</h2> | <h2>Worst Time Complexity</h2> |
+| :------------------------------: | :---------------------------: | :------------------------------: | :----------------------------: |
+|   <h3>Sorting Algorithms</h3>    |                               |                                  |                                |
+|          Bubble Sort             |             O(n)              |             O(n^2)               |             O(n^2)             |
+|         Selection Sort           |            O(n^2)             |             O(n^2)               |             O(n^2)             |
+|        Insertion Sort            |             O(n)              |             O(n^2)               |             O(n^2)             |
+|           Merge Sort             |          O(n log n)           |           O(n log n)             |           O(n log n)           |
+|           Quick Sort             |          O(n log n)           |           O(n log n)             |             O(n^2)             |
+|            Heap Sort             |          O(n log n)           |           O(n log n)             |           O(n log n)           |
+|         Counting Sort            |           O(n + k)            |            O(n + k)              |            O(n + k)            |
+|           Radix Sort             |            O(nk)              |             O(nk)                |              O(nk)             |
+|          Bucket Sort             |           O(n + k)            |            O(n + k)              |             O(n^2)             |
+| ******************************** | ***************************** | ******************************** | ****************************** |
+|  <h3>Searching Algorithms</h3>   |                               |                                  |                                |
+|         Linear Search            |            O(1)               |              O(n)                |              O(n)              |
+|         Binary Search            |            O(1)               |            O(log n)              |            O(log n)            |
+| ******************************** | ***************************** | ******************************** | ****************************** |
+|    <h3>Graph Algorithms</h3>     |                               |                                  |                                |
+|     Depth-First Search (DFS)     |           O(V + E)            |            O(V + E)              |            O(V + E)            |
+|    Breadth-First Search (BFS)    |           O(V + E)            |            O(V + E)              |            O(V + E)            |
+|      Dijkstra’s Algorithm        |        O(E + V log V)         |         O(E + V log V)           |          O(E + V log V)        |
+|      Bellman-Ford Algorithm      |            O(VE)              |             O(VE)                |              O(VE)             |
+|     Floyd-Warshall Algorithm     |            O(V^3)             |             O(V^3)               |              O(V^3)            |
+| ******************************** | ***************************** | ******************************** | ****************************** |
+|   <h3>Dynamic Programming</h3>   |                               |                                  |                                |
+|     Fibonacci Sequence (DP)      |             O(n)              |              O(n)                |               O(n)             |
+| Longest Common Subsequence (LCS) |            O(mn)              |              O(mn)               |               O(mn)            |
+
+# Comparing Algorithms
+
+- `Execution Times` :
+    - Not a good measure
+    - It's specific to a particular computer
+
+- `No. of Statements Executed` :
+    - Not a good measure
+    - Varies with programming language and style of individual programmer
+
+So, ideal solution is =>
+
+- Assume that running time of given algorithm is function of input size 'n' i.e. f(n)
+- Compare different algorithms corresponding to different runtime
+- This comparison is independent of machine time, programming style, etc.
