@@ -20,16 +20,18 @@ We can say that
 
 # Types of Time Complexities
 
-- Constant Time => O(1)
-- Logarithmic Time => O(log n)
-- Linear Time => O(n)
-- Logarithmic-Linear Time => O(n*log n)
-- Quadratic Time => O(n<sup>2</sup>)
-- Bilinear Time => O(n*m)
-- Cubic Time => O(n<sup>3</sup>)
-- Exponential Time => O(2<sup>n</sup>)
-- Factorial Time => O(n!)
-- Polynomial Time => O(n<sup>k</sup>)
+|                Type                |     Notation     |
+| :--------------------------------: | :--------------: |
+|           Constant Time            |        O(1)      |
+|         Logarithmic Time           |      O(log n)    |
+|            Linear Time             |        O(n)      |
+| Logarithmic-Linear or Super Linear |     O(n log n)   |
+|           Quadratic Time           | O(n<sup>2</sup>) |
+|            Bilinear Time           |       O(n*m)     |
+|              Cubic Time            | O(n<sup>3</sup>) |
+|          Exponential Time          | O(2<sup>n</sup>) |
+|           Factorial Time           |       O(n!)      |
+|           Polynomial Time          | O(n<sup>k</sup>) |
 
 > ___Note*___ : These time complexities are ordered from lowest to highest as we move from top to bottom
 
