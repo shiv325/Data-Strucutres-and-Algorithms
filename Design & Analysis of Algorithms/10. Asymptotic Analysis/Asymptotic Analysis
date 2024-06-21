@@ -1,8 +1,0 @@
-# Asymptotic Analysis
-
-- Evaluates performance of algorithm in terms of input size
-- Describes running time or space complexities based on input size
-- Doesn't measures the actual running time
-- Calculates how time or space taken by algorithm increases with input size
-
-## A
