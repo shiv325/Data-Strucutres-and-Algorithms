@@ -39,11 +39,11 @@ We can say that
 
 - `Constant Time` :
     
-          print("Hello World")
-          a = 10
-          b = 10
-          c = a + b
-          t = True
+      print("Hello World")
+      a = 10
+      b = 10
+      c = a + b
+      t = True
 
     - T(n) = t(Statement1) + t(Statement2) + t(Statement3) + t(Statement4) + t(Statement5)
     - Overall, T(n) = O(1)
@@ -153,9 +153,9 @@ We can say that
     - For each outer loop iteration, the inner loop iterates 'n' times
     - Calculation of Time Complexity :-
      
-            Total time = t(Outer Loop Iteration) * t(Inner Loop Iteration)
-                       = O(n) * O(n)
-                       = O(n<sup>2</sup>)
+          Total time = t(Outer Loop Iteration) * t(Inner Loop Iteration)
+                     = O(n) * O(n)
+                     = O(n<sup>2</sup>)
 
     - Execution Time is roughly proportional to square of input size
     - Examples => Bubble Sort, Selection Sort, Nested Loops, Insertion Sort, etc.
@@ -170,9 +170,9 @@ We can say that
     - For each outer loop iteration, the inner loop iterates 'm' times
     - Calculation of Time Complexity :-
      
-            Total time = t(Outer Loop Iteration) * t(Inner Loop Iteration)
-                       = O(n) * O(m)
-                       = O(n*m)
+          Total time = t(Outer Loop Iteration) * t(Inner Loop Iteration)
+                     = O(n) * O(m)
+                     = O(n*m)
  
     - Execution time depends on both the input sizes 'n' and 'm' linearly
     - Overall, the time complexity evaluates to O(n<sup>2</sup>)
@@ -190,9 +190,9 @@ We can say that
     - For each first middle inner loop, the inner most loop iterates 'n' times
     - Calculation of Time Complexity :-
      
-            Total time = t(Outer Most Loop Iteration) * t(Middle Inner Loop Iteration) * t(Inner Most Loop Iteration)
-                       = O(n) * O(n) * O(n)
-                       = O(n<sup>3</sup>)
+          Total time = t(Outer Most Loop Iteration) * t(Middle Inner Loop Iteration) * t(Inner Most Loop Iteration)
+                     = O(n) * O(n) * O(n)
+                     = O(n<sup>3</sup>)
  
     - Execution time is directly proportional to cube of input size
     - Examples => Naive Matrix Multiplication, Processing all possible triplets in a set, etc.
